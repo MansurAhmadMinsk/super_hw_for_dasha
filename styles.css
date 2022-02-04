@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(177, 162, 150, 0.5);
+}
+
+.container {
+    display: flex;
+    width: 70%;
+    max-height: 470px;
+    column-gap: 30px;
+    background-color: #7395AE;
+    color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    max-width: 1000px;
+}
+
+.left {
+    flex-basis: 40%;
+}
+
+.right {
+    flex-basis: 60%;
+}
+
+.left img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.right {
+    padding: 20px 10px 20px 0;
+}
+
+.name-block {
+    margin-bottom: 10px;
+}
+
+.name-block h1 {
+    text-transform: uppercase;
+    font-size: 38px;
+}
+.name-block span {
+    font-size: 14px;
+}
+
+.text {
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #5D5C61;
+    font-weight: bold;
+}
+.text span {
+    color: #fff;
+    font-weight: 500;
+}
+
+h2 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    display: block;
+    border-bottom: 1px solid #5D5C61;
+    padding-bottom: 5px;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 780px) {
+    .container {
+        width: 100%;
+        max-height: 100%;
+        flex-direction: column;
+        position: relative;
+        background-color: transparent;
+    }
+    .left {
+        width: 350px;
+        height: 350px;
+        overflow: hidden;
+        border-radius: 50%;
+        flex-basis: 350px;
+        position: absolute;
+        left: 50%;
+        top: 2%;
+        transform: translateX(-50%);
+    }
+    .left img {
+        object-position: 20% 7%;
+    }
+    .right {
+        padding: 400px 10px 20px 10px;
+    }
+    .name-block {
+        text-align: center;
+        color: #0A2449;
+        margin-bottom: 30px;
+    }
+    .text {
+        color:#0A2449;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .text span {
+        color: #5D5C61;
+    }
+    h2 {
+        color: #0A2449;
+        font-size: 32px;
+    }
+    h1 {
+        font-size: 56px;
+    }
+    .name-block span {
+        font-size: 18px;
+    }
+}
